@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{margin:0;padding:0;}
+	ul{list-style: none;}
+	img{border:none;}
+	.container{width:960px;margin:5px auto;margin-bottom:60px;}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="widget-nav-list multi-nav">
+			<style type="text/css">
+				.widget-nav-list {cursor: pointer;width:100%;height:32px;background-color: #09f;}
+
+				.widget-nav-list ul.nav-list {color:#fff;width:100%;height:100%;}
+				.widget-nav-list ul.nav-list li.nav-list-item {float:left;width:100px;text-align:center;line-height: 32px;background-color: #09f;}
+
+				.widget-nav-list ul.nav-list li.nav-list-item:hover{background-color: #09c;}
+				.widget-nav-list ul.nav-list li.nav-list-item ul.nav-list{display:none;}
+				.widget-nav-list ul.nav-list li.nav-list-item ul.nav-list li.nav-list-item{background-color: #ccc;color:#f40;};
+				.widget-nav-list ul.nav-list li.nav-list-item:hover ul.nav-list{display: block;}
+			</style>
+			<ul class="nav-list" data-level="0">
+				<li class="nav-list-item">
+					导航标题1
+				</li>
+				<li class="nav-list-item">
+					导航标题2
+					<ul class="nav-list" data-level="1">
+						<li class="nav-list-item">
+							导航标题2.1
+						</li>
+						<li class="nav-list-item">
+							导航标题2.2
+						</li>
+					</ul>
+				</li>
+				<li class="nav-list-item">
+					导航标题3
+				</li>
+				<li class="nav-list-item">
+					导航标题4
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<div class="widget-nav-list multi-nav nav-line">
+			<style type="text/css">
+				.widget-nav-list {cursor: pointer;width:100%;height:32px;background-color: #09f;}
+				.nav-line{height:32px;position: relative;}
+
+				.widget-nav-list ul.nav-list {color:#fff;width:100%;height:100%;}
+				.widget-nav-list ul.nav-list li.nav-list-item {float:left;width:100px;text-align:center;line-height: 32px;background-color: #09f;}
+
+
+				.widget-nav-list ul.nav-list li.nav-list-item:hover{background-color: #09c;}
+				.widget-nav-list ul.nav-list li.nav-list-item ul.nav-list{display:none;}
+				.widget-nav-list ul.nav-list li.nav-list-item:hover ul.nav-list{display: block;}
+
+				.nav-line ul.nav-list li.nav-list-item ul.nav-list{position:absolute;left:0;width:100%;}
+				.nav-line ul.nav-list li.nav-list-item ul.nav-list li.nav-list-item{min-width:100px;float:left;background-color: #ccc;color:#f40;font-size:12px;}
+			</style>
+			<ul class="nav-list" data-level="0">
+				<li class="nav-list-item">
+					导航标题1
+					<ul class="nav-list" data-level="1">
+						<li class="nav-list-item">
+							导航标题1.1
+						</li>
+						<li class="nav-list-item">
+							导航标题1.2
+						</li>
+						<li class="nav-list-item">
+							导航标题1.3
+						</li>
+					</ul>
+				</li>
+				<li class="nav-list-item">
+					导航标题2
+					<ul class="nav-list" data-level="1">
+						<li class="nav-list-item">
+							导航标题2.1
+						</li>
+						<li class="nav-list-item">
+							导航标题2.2
+						</li>
+						<li class="nav-list-item">
+							导航标题2.3
+						</li>
+						<li class="nav-list-item">
+							导航标题2.4
+						</li>
+						<li class="nav-list-item">
+							导航标题2.5
+						</li>
+						<li class="nav-list-item">
+							导航标题2.6
+						</li>
+					</ul>
+				</li>
+				<li class="nav-list-item">
+					导航标题3
+				</li>
+				<li class="nav-list-item">
+					导航标题4
+				</li>
+				<li class="nav-list-item">
+					导航标题5
+				</li>
+				<li class="nav-list-item">
+					导航标题6
+				</li>
+				<li class="nav-list-item">
+					导航标题7
+				</li>
+				<li class="nav-list-item">
+					导航标题8
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<div id="slider" class="widget-powerpoint ppt-shortcut">
+			<style type="text/css">
+				.widget-powerpoint{width:700px;height:300px;background:#eef;cursor: pointer;}
+				.widget-powerpoint .powerpoint-body{width:100%;height:100%;}
+
+				.widget-powerpoint .powerpoint-body .aside-left{position:relative;float:left;width:70%;background-color: #444;height:100%;}
+				.widget-powerpoint .powerpoint-body .aside-right{position:relative;float:left;width:30%;background-color: #aaa;height:100%;overflow: hidden;}
+				
+
+				.aside-left .ppt-slider{overflow:hidden;width:100%;height:100%;position: relative;}
+				.aside-left .ppt-slider ul.ppt-list{position:absolute;left:0;top:0;width:300%;height:100%;}
+				.aside-left .ppt-slider ul.ppt-list li.ppt-list-item{width:33.3333333333%;height:100%;opacity:0.7;float:left;background-size: 500px !important;}
+				.aside-left .ppt-slider ul.ppt-list li.ppt-list-item img{width:100%;height:100%;}
+				
+				.aside-right .ppt-shortcut {overflow: hidden;}
+				.aside-right .ppt-shortcut ul.ppt-shortcut-list{
+					position: absolute;left:0;top:0;
+					width:100%;height:100%;
+				}
+				.aside-right .ppt-shortcut ul.ppt-shortcut-list li.shortcut-item{height:84px;border:8px solid #222;background-size: 200px !important;opacity:0.5;}
+				
+				.aside-right .ppt-shortcut ul.ppt-shortcut-list li.active{opacity: 1;}
+				.aside-right .ppt-shortcut ul.ppt-shortcut-list li.shortcut-item img{width:100%;height:100%;}
+
+				.widget-powerpoint .powerpoint-footer {opacity:0.6;position:relative;left:0;bottom:32px;height:32px;background:#222;width:70%;}
+				.widget-powerpoint .powerpoint-footer .powerpoint-title{margin-left:4px;line-height: 32px;color:#fff;font-size:12px;max-width:420px;}
+
+				.widget-powerpoint .powerpoint-footer ul.btn-list{position:absolute;right:0;top:0px;width:100%;}
+				.widget-powerpoint .powerpoint-footer ul.btn-list li.btn-item{float:right;width:20px;height:20px;margin:6px 4px 6px 0;text-align: center;line-height: 20px;background-color: #666;color:#fff;border-radius: 50%;font-size:12px;}
+				.widget-powerpoint .powerpoint-footer ul.btn-list li.active{background-color: #ff4400;}
+			</style>
+			<div class="powerpoint-body">
+				<div class="aside-left">
+					<div class="ppt-slider">
+						<ul class="ppt-list">
+							<li class="ppt-list-item" style="background:url('images/prefix_1.png') 0 0 no-repeat;"></li>
+							<li class="ppt-list-item" style="background:url('images/prefix_2.png') 0 0 no-repeat;"></li>
+							<li class="ppt-list-item" style="background:url('images/prefix_3.png') 0 0 no-repeat;"></li>
+						</ul>
+					</div>
+				</div>
+				<div class="aside-right">
+					<div class="ppt-shortcut">
+						<ul class="ppt-shortcut-list">
+							<li class="shortcut-item active" style="background:url('images/prefix_sm_1.png') 0 0 no-repeat;"></li>
+							<li class="shortcut-item" style="background:url('images/prefix_sm_2.png') 0 0 no-repeat;"></li>
+							<li class="shortcut-item" style="background:url('images/prefix_sm_3.png') 0 0 no-repeat;"></li>
+							<li class="shortcut-item" style="background:url('images/prefix_sm_1.png') 0 0 no-repeat;"></li>
+							<li class="shortcut-item" style="background:url('images/prefix_sm_2.png') 0 0 no-repeat;"></li>
+							<li class="shortcut-item" style="background:url('images/prefix_sm_3.png') 0 0 no-repeat;"></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="powerpoint-footer">
+				<span class="powerpoint-title">幻灯片标题</span>
+				<ul class="btn-list">
+					<li class="btn-item">3</li>
+					<li class="btn-item">2</li>
+					<li class="btn-item active">1</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+<script type="text/javascript">
+	$(function (){
+		$('#slider').slidable({
+			context : '.widget-powerpoint'
+		});
+	});
+</script>
+</html>
