@@ -17,6 +17,8 @@ function log(k,v){
 		var sliderContainer = context.find(opts.sliderContainer);
 		var sliderItem = sliderContainer.children('ul');
 		var sliderItemList = sliderItem.children('li');
+		var titleElem = null;
+			titleElem = hasTitle ? context.find(opts.titleClass) : null;
 		var shortcut = null;
 			shortcut = opts.shortcut;
 
@@ -126,6 +128,10 @@ function log(k,v){
 						this.smallButtonItemList.eq(this.currentIndex).addClass('active');
 					}
 
+					if (opts.hasTitle) {
+						titleElem.text(titleArray[this.currentIndex]);
+					}
+
 				},
 				autoPlay : function (){
 					var _this_ = this;
@@ -183,6 +189,9 @@ function log(k,v){
 		},
 		autoPlay		: 1,
 		switchSpeed 	: 1000,
-		interval        : 3000
+		interval        : 3000,
+		hasTitle        : 1,
+		titleClass      : 'titleClass',
+		titleArray      : []
 	};
 })(jQuery);
