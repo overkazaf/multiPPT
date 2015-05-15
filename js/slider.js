@@ -18,7 +18,7 @@ function log(k,v){
 		var sliderItem = sliderContainer.children('ul');
 		var sliderItemList = sliderItem.children('li');
 		var titleElem = null;
-			titleElem = hasTitle ? context.find(opts.titleClass) : null;
+			titleElem = opts.hasTitle ? context.find(opts.titleClass) : null;
 		var shortcut = null;
 			shortcut = opts.shortcut;
 
